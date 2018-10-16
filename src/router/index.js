@@ -7,11 +7,6 @@ Vue.use(Router)
 
 const Routes = [
   {
-    path: '/',
-    name: 'configure',
-    component: conf_frame
-  },
-  {
     path: '/conf',
     name: 'configure',
     component: conf_frame
@@ -20,6 +15,11 @@ const Routes = [
     path: '/statistics',
     name: 'statistics',
     component: sta_frame
+  },
+  {
+    path: '*',
+    name: 'default',
+    component: conf_frame
   }
 ];
 const RouterConfig = {
